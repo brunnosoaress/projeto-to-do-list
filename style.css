@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #c2e9fb;
+    --cor2: #a1c4fd;
+    --cor3: #6aa0f8;
+}
+
+body {
+    background-image: linear-gradient(to right,var(--cor2),var(--cor1));
+}
+
+div.container {
+    display: flex;
+    position: relative;
+}
+
+div.conteudo {
+    background-color: white;
+    position: relative;
+    width: 38rem;
+    height: 45rem;
+    margin: auto;
+    top: 8rem;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+div.conteudo #data {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--cor3);
+    font-size: 1.3rem;
+}
+
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.114);
+}
+
+div.conteudo #titulo {
+    margin-top: 3rem;
+    font-weight: normal;
+}
