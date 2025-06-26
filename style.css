@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,37 +14,56 @@
 }
 
 body {
-    background-image: linear-gradient(to right,var(--cor2),var(--cor1));
+    font-family: 'Outfit', sans-serif;
 }
 
-div.container {
-    display: flex;
+.container {
     position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
 }
 
-div.conteudo {
+article {
     background-color: white;
-    position: relative;
-    width: 38rem;
+    position: absolute;
+    width: 35rem;
     height: 45rem;
-    margin: auto;
-    top: 8rem;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 2rem;
     text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-div.conteudo #data {
+#data {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    color: var(--cor3);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    color: #6aa0f8;
+}
+
+#titulo {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 hr {
     border: 1px solid rgba(0, 0, 0, 0.114);
 }
 
-div.conteudo #titulo {
+article .tarefas {
+    line-height: 3.2rem;
+    margin-left: 8rem;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+article #add_tarefa {
     margin-top: 3rem;
-    font-weight: normal;
+    color: rgba(0, 0, 0, 0.312);
+    font-size: 1.2rem;
 }
