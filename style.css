@@ -55,11 +55,20 @@ hr {
 
 article .tarefas {
     line-height: 3.2rem;
-    margin-left: 8rem;
-    text-align: justify;
     font-size: 1.3rem;
+    margin-left: 4rem;
+    text-align: justify;
     font-weight: 500;
-    list-style: none;
+}
+
+.tarefas .selecao {
+    margin-left: 1rem;
+    height: 20px;
+    width: 20px;
+}
+
+.selecao input:checked {
+
 }
 
 article #add_tarefa {
